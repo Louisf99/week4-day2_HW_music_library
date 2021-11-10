@@ -65,4 +65,9 @@ album_repository.delete_all()
 album_repository.delete(2)
 
 
+album_list_from_artist = artist_repository.albums(artist_1)
+for artist in album_list_from_artist:
+        print(artist.__dict__)
+
+        
 pdb.set_trace()
